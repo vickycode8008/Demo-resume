@@ -5,7 +5,18 @@
   <meta charset="UTF-8">
   <title>MY WEBSITE</title>
   <style>
-    
+    /* Default (Light Mode) */
+body {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #121212;
+  color: white;
+}
     h1 {
       color: darkslategrey;
       font-style: normal;
@@ -57,6 +68,7 @@
 
 <body>
 
+<button id="theme-toggle">🌙</button>
 
   <h1>VIGNESH S</h1>
   <img src="vicky.jpeg" .jpeg" alt="Profile Photo" width="250"><br>
@@ -118,4 +130,18 @@
 </body>
 
 </html>
-_____________________________________________________________________
+__________________
+<script>
+const toggleBtn = document.getElementById("theme-toggle");
+
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+
+  // Change icon
+  if (document.body.classList.contains("dark")) {
+    toggleBtn.textContent = "☀️";
+  } else {
+    toggleBtn.textContent = "🌙";
+  }
+});
+</script>___________________________________________________
