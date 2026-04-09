@@ -1,0 +1,18 @@
+<h2>"I am a passionate beginner web developer💻  currently learning HTML, CSS, and JavaScript. I enjoy building simple and creative websites while improving my skills step by step. My goal is to become a professional developer and create useful, user-friendly web applications.
+
+I believe in consistent learning, practicing daily, and growing through real projects. Right now, I am focused on building my portfolio and exploring new ideas to improve my knowledge✨"</h2>
+<style>
+    h2{
+        background-color: black;
+        color: aliceblue;
+        font-style: italic;
+        margin-top: 35%;
+       margin-left: 10%;
+       margin-right: 10%;
+    
+    }
+    body{
+
+        background-color: black;
+    }
+</style>
